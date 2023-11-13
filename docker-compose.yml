@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  sborka:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 7070:80
